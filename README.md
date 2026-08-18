@@ -4,6 +4,8 @@
 
 # PageLM
 
+<a href="https://trendshift.io/repositories/15668?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-15668" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/15668/daily?language=TypeScript" alt="CaviraOSS%2FPageLM | Trendshift" width="250" height="55"/></a>
+
 **An open source AI powered education platform that transforms study materials into interactive learning experiences, slightly inspired by NotebookLM**
 
 [Report Bug](https://github.com/caviraOSS/pagelm/issues) • [Request Feature](https://github.com/caviraOSS/pagelm/issues) • [Discord server](https://discord.gg/P7HaRayqTh)
