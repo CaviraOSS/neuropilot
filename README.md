@@ -22,6 +22,12 @@
 
 ---
 
+# 🚀 **We’re actively accepting volunteers!**
+
+We’re looking for **developers, social media volunteers, designers, content creators, community helpers, and more.** If you’d like to contribute and be part of what we’re building, we’d love to have you!
+
+📩 **Interested?** Reach out at **[nullure@cavira.app](mailto:nullure@cavira.app)**
+
 # **🔥 Spread the Word!**
 
 <p align="center">
