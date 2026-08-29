@@ -1,6 +1,0 @@
-{
-  "watch": ["backend/src"],
-  "ext": "ts",
-  "exec": "npx tsx backend/src/core/index.ts",
-  "ignore": ["node_modules", "frontend", "test"]
-}
