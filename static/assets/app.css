@@ -1,0 +1,118 @@
+body {
+	font-family: "Variable Sans", sans-serif;
+	overflow-x: hidden;
+}
+
+.font-funnel {
+	font-family: "Funnel Display", sans-serif;
+}
+
+.font-variable {
+	font-family: "Variable Sans", sans-serif;
+}
+
+.font-dm {
+	font-family: "DM Sans", sans-serif;
+}
+
+.font-metrophobic {
+	font-family: "Metrophobic", sans-serif;
+}
+
+::selection {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+	height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgb(36, 36, 36);
+	border-radius: 3px;
+	cursor: all-scroll;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: inherit;
+	background-size: cover;
+	z-index: 0;
+}
+
+@font-face {
+	font-family: "Funnel Display";
+	font-style: normal;
+	font-weight: 100 800;
+	font-display: swap;
+	src: url("/assets/fonts/funnel_display.woff2") format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: "Variable Sans";
+	font-style: normal;
+	font-weight: 100 800;
+	font-display: swap;
+	src: url("/assets/fonts/variable_sans.ttf") format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: "DM Sans";
+	font-style: normal;
+	font-weight: 100 1000;
+	font-display: swap;
+	src: url("/assets/fonts/dm_sans.woff2") format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: "Metrophobic";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("/assets/fonts/Metrophobic.woff2") format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/fonts/inter.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.progressive-blur-to-t {
+	mask: linear-gradient(to top, black, transparent);
+	backdrop-filter: blur(12px);
+}
+
+@property --angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes spin {
+  to {
+    --angle: 360deg;
+  }
+}
+@keyframes spin-slow {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.animate-spin-slow {
+    animation: spin-slow 2s linear infinite;
+}

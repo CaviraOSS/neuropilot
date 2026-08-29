@@ -1,0 +1,3 @@
+node_modules
+*.woff2
+.svelte-kit

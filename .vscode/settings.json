@@ -1,0 +1,18 @@
+{
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"html.format.wrapAttributes": "preserve",
+	"html.format.wrapLineLength": 0,
+	"html.format.indentInnerHtml": true,
+	"[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "prettier.printWidth": 300,          
+  "prettier.singleAttributePerLine": false, 
+  "prettier.bracketSameLine": true,
+  "editor.insertSpaces": false,
+  "editor.tabSize": 4,
+  "prettier.useTabs": true,
+  "prettier.tabWidth": 4
+}
