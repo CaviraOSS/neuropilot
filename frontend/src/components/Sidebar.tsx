@@ -16,11 +16,7 @@ export default function Sidebar() {
   const [isToggled, setIsToggled] = useState(false)
   const [chats, setChats] = useState<ChatsResponse | null>(null);
 
-  useEffect(() => {
-    getChats().then(data => setChats(data));
-  }, []);
-
-  // Fetch updated list whenever the drawer is toggled open
+  // Fetch chats only when the drawer is opened to avoid redundant requests on mount
   useEffect(() => {
     if (isToggled) {
       getChats().then(data => setChats(data));
@@ -46,7 +42,7 @@ export default function Sidebar() {
       {/* Click-outside backdrop to prevent permanent chat obstruction */}
       {isToggled && (
         <div
-          className="fixed inset-0 bg-black/40 backdrop-blur-xs z-30 transition-opacity"
+          className="fixed inset-0 bg-black/40 backdrop-blur-sm z-30 transition-opacity"
           onClick={() => setIsToggled(false)}
           aria-hidden="true"
         />
